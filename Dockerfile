@@ -16,7 +16,7 @@ RUN dnf upgrade --refresh -y && \
     guile \
     gc \
     make \
-    compat-openssl10
+    compat-openssl10 \
     libuv \
     libtool-ltdl \
     libicu \
