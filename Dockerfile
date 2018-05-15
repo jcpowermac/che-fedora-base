@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:27
+FROM registry.fedoraproject.org/fedora:28
 EXPOSE 22 4403
 ARG JAVA_VERSION=1.8.0
 ENV JAVA_HOME=/usr/lib/jvm/java-${JAVA_VERSION}
