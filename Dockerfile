@@ -12,6 +12,15 @@ RUN dnf upgrade --refresh -y && \
     wget \
     unzip \
     bash-completion \
+    nodejs \
+    guile \
+    gc \
+    make \
+    compat-openssl10
+    libuv \
+    libtool-ltdl \
+    libicu \
+    libatomic_ops \
     java-${JAVA_VERSION}-openjdk-devel && \
     dnf clean all && \
     sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config && \
