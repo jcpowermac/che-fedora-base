@@ -13,6 +13,7 @@ RUN dnf upgrade --refresh -y && \
     unzip \
     bash-completion \
     nodejs \
+    npm \
     guile \
     gc \
     make \
