@@ -28,7 +28,9 @@ RUN dnf upgrade --refresh -y && \
     echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     useradd -u 1000 -G users,wheel -d /home/user --shell /bin/bash -m user && \
     usermod -p "*" user && \
-    sed -i 's/requiretty/!requiretty/g' /etc/sudoers
+    sed -i 's/requiretty/!requiretty/g' /etc/sudoers && \
+    npm install --unsafe-perm -g gulp bower grunt grunt-cli yeoman-generator yo generator-angular generator-karma generator-webapp
+    
 
 USER user
 WORKDIR /projects
